@@ -1,0 +1,1 @@
+from django.conf.urls import urlfrom django.urls import re_pathfrom . import viewsurlpatterns = [    # 购物车增删改查    re_path(r'^carts/(?P<table>\d+)/$', views.CartsView.as_view()),    # 购物车全选    re_path(r'^carts/selection/(?P<id>\d+)/$', views.CartsSelectView.as_view()),]
